@@ -3,25 +3,23 @@ package model;
 public class Office {
 	
 	//Attributes
-	private int floor = 0;
 	private String id = "";
 	//Relations
-	private Person persons;
+	private Person person;
 	//Methods
-	public Office(int pFloor, String pId) {
-		floor = pFloor;
+	public Office(String pId) {
 		id = pId;
-	}
-	public int getFloor() {
-		return floor;
-	}
-	public void setFloor(int floor) {
-		this.floor = floor;
 	}
 	public String getId() {
 		return id;
 	}
 	public void setId(String id) {
 		this.id = id;
+	}
+	public Person getPerson() {
+		return person;
+	}
+	public void setPerson(Person person) {
+		this.person = person;
 	}
 }

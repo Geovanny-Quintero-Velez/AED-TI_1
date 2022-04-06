@@ -1,14 +1,14 @@
 package Interfaces;
 
-public interface LinkedList_I <V, K>{
+public interface LinkedList_I <V>{
 	
-	public abstract void add(V value, K key);
+	public abstract void add(V value);
 	
-	public abstract void remove(K key);
+	public abstract void remove(int position);
 	
 	public abstract boolean isEmpty();
 	
 	public abstract int size(); 
 	
-	public abstract V getValue(K key); 
+	public abstract V getValue(int position); 
 }

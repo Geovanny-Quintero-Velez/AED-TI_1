@@ -1,8 +1,8 @@
 package Interfaces;
 
-public interface PriorityQueue_I <V, K> {
+public interface PriorityQueue_I <V>{
 	
-	public abstract void enqueue(V value, K key);
+	public abstract void enqueue(V value, int priority);
 	
 	public abstract V dequeue();
 	

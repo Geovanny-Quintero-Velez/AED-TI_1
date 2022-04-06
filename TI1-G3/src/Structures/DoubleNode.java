@@ -24,6 +24,10 @@ public class DoubleNode <V> {
 		next.setPrevious(this);
 	}
 	
+	public void setNext(DoubleNode<V> nodo) {
+		this.next = nodo;
+	}
+	
 	public void setPrevious(DoubleNode<V> nodo) {
 		this.previous = nodo;
 	}

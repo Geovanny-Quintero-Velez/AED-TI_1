@@ -1,8 +1,8 @@
 package Interfaces;
 
-public interface Queue_I<V,K> {
+public interface Queue_I<V> {
 
-	public abstract void enqueue(V value, K key);
+	public abstract void enqueue(V value);
 	
 	public abstract V dequeue();
 	

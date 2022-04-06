@@ -2,13 +2,15 @@ package model;
 
 import java.util.ArrayList;
 
+import Structures.DoubleLinkedList;
+
 public class Building {
 	
 	//Attributes
 	private String id = "";
 	private boolean elevator = false;
 	//Relations
-	private ArrayList<Office> offices = new ArrayList<>();
+	private DoubleLinkedList<Floor> floors = new DoubleLinkedList<>();
 	//Methods
 	public Building(String id) {
 		this.id = id;
@@ -25,8 +27,10 @@ public class Building {
 	public void setElevator(boolean elevator) {
 		this.elevator = elevator;
 	}
-	
-	public ArrayList<Office> getOffices(){
-		return offices;
+	public DoubleLinkedList<Floor> getFloors() {
+		return floors;
+	}
+	public void setFloors(DoubleLinkedList<Floor> floors) {
+		this.floors = floors;
 	}
 }

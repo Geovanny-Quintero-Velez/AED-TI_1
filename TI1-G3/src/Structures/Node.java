@@ -26,4 +26,8 @@ public class Node<V> {
 		this.next = new Node<V>(value);
 	}
 	
+	public void setNext(Node<V> node) {
+		this.next = node;
+	}
+	
 }
